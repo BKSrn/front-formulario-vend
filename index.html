@@ -181,7 +181,8 @@
             };
 
             // Criar o link mailto com os dados do formulário
-            const mailtoLink = `mailto:?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+            // O email de destino está especificado antes do "?"
+            const mailtoLink = `mailto:comercialvend97@gmail.com.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
                 `Nome: ${formData.name}\n` +
                 `Email: ${formData.email}\n\n` +
                 `Mensagem:\n${formData.message}`
